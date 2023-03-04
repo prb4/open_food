@@ -18,6 +18,6 @@ def meal(prompt):
     return response.to_dict()
 
 if __name__ == "__main__":
-    prompt = "Whats a 15 minute keto meal that includes steak and brocoli?"
+    prompt = "What is a 15 minute keto meals that include steak and brocoli?  And tell me where you got the meal from"
     ret = meal(prompt)
     print( ret['choices'][0].to_dict()['text'])
